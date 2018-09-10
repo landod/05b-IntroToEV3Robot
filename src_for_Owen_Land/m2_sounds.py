@@ -5,6 +5,7 @@ Authors: Dave Fisher, David Mutchler, Vibha Alangar,
          their colleagues, and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+import rosebotics as rb
 
 # ------------------------------------------------------------------------------
 # TODO: 2.
@@ -13,6 +14,8 @@ Authors: Dave Fisher, David Mutchler, Vibha Alangar,
 # ------------------------------------------------------------------------------
 
 def main():
+
+
     fun_song = [(392, 350, 100), (392, 350, 100), (392, 350, 100),
                 (311.1, 250, 100), (466.2, 25, 100), (392, 350, 100),
                 (311.1, 250, 100), (466.2, 25, 100), (392, 700, 100),
@@ -36,5 +39,7 @@ def main():
                 (311.13, 250, 100), (466.16, 25, 100), (392.00, 300, 150),
                 (311.13, 250, 100), (466.16, 25, 100), (392, 700)]
 
+    song = rb.Song(fun_song)
+    song.play()
 
 main()
